@@ -13,7 +13,6 @@ class Read(BaseModel):
     profile = models.ForeignKey('users.Profile', on_delete=models.CASCADE)
     post = models.ForeignKey('blogs.Post', on_delete=models.CASCADE)
     
-
     is_read_later =  models.BooleanField(
         _('read post later'),
         default=False,
